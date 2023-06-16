@@ -39,7 +39,7 @@ h1 {
   color: var(--vermelha);
   cursor: pointer;
   height: 120px;
-  font-size: 1.75em;
+  font-size: 1.75rem;
   font-weight: bold;
   line-height: 120px;
   text-align: center;
@@ -64,4 +64,17 @@ h1 {
 .tecla.active:focus,
 .tecla:active:focus {
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
+}
+
+@media (max-width: 1200px) {
+  .h1 {
+    font-size: 1.5rem;
+  }
+  .tecla {
+    border-radius: 30px;
+    font-size: 1.25rem;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+  }
 }
